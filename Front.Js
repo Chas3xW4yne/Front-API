@@ -4,7 +4,7 @@ const API_URL = 'https://cliente-api-production.up.railway.app/cliente';
 async function criarCliente() {
   const nome = document.getElementById('nome').value;
   const email = document.getElementById('email').value;
-  await fetch(cliente-api-production-058c.up.railway.app, {
+  await fetch(https://cliente-api-production-058c.up.railway.app, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ nome, email })
@@ -13,7 +13,7 @@ async function criarCliente() {
 }
 
 async function listarClientes() {
-  const response = await fetch(cliente-api-production-058c.up.railway.app);
+  const response = await fetch(https://cliente-api-production-058c.up.railway.app);
   const clientes = await response.json();
   const lista = document.getElementById('listaClientes');
   lista.innerHTML = '';
@@ -28,7 +28,7 @@ async function atualizarCliente() {
   const id = document.getElementById('id').value;
   const nome = document.getElementById('nome').value;
   const email = document.getElementById('email').value;
-  await fetch(`${cliente-api-production-058c.up.railway.app}/${id}`, {
+  await fetch(`${https://cliente-api-production-058c.up.railway.app}/${id}`, {
     method: 'PUT',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ nome, email })
@@ -38,7 +38,7 @@ async function atualizarCliente() {
 
 async function deletarCliente() {
   const id = document.getElementById('id').value;
-  await fetch(`${cliente-api-production-058c.up.railway.app}/${id}`, {
+  await fetch(`${https://cliente-api-production-058c.up.railway.app}/${id}`, {
     method: 'DELETE'
   });
   listarClientes();
