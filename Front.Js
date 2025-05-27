@@ -13,7 +13,7 @@ async function criarCliente() {
 }
 
 async function listarClientes() {
-  const response = await fetch(API_URL);
+  const response = await fetch(cliente-api-production-058c.up.railway.app);
   const clientes = await response.json();
   const lista = document.getElementById('listaClientes');
   lista.innerHTML = '';
