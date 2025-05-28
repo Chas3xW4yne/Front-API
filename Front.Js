@@ -1,5 +1,5 @@
 /* script.js */
-const API_URL = 'https://cliente-api-production.up.railway.app/cliente';
+const API_URL = "http://localhost:8080/api/clientes";
 
 async function criarCliente() {
   const nome = document.getElementById('nome').value;
